@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Interaktif</title>
+  <style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Program Interaktif</h1>
+
+  <button class="button" onclick="changeText()">Klik Saya</button>
+
+  <p id="text">Ini adalah teks awal.</p>
+
+  <script>
+    function changeText() {
+      var textElement = document.getElementById("text");
+      textElement.innerHTML = "Teks telah berubah!";
+    }
+  </script>
+</body>
+</html>
